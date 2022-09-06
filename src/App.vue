@@ -38,8 +38,16 @@ export default {
   font-style: normal;
 }
 
+* {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
 #app {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   margin: 0 auto;
   padding: 0;
@@ -48,7 +56,11 @@ export default {
   font-family: "Agency FB";
 }
 
-a {
-  text-decoration: none;
+.text-yellow {
+  color: #fbc216;
+}
+
+.white-border {
+  border: 1px solid #fff !important;
 }
 </style>

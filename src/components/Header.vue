@@ -7,7 +7,7 @@
     <img
       src="@/assets/logo.svg"
       :preview=false
-      :width="200"
+      width="200"
     />
 
     <v-spacer></v-spacer>
