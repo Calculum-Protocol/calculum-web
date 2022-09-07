@@ -5,8 +5,8 @@
     class="pa-2 white-border"
   >
     <v-container>
-      <v-row>
-        <span><b>>_</b><span class="text-yellow">CALCULUM</span>, DEMOCRATIZE ACCESS TO PROFESSIONAL-GRADE, FULLY- AUTOMATED. QUANTITATIVE TRADING STRATEGIES</span>
+      <v-row class="pb-1">
+        <span class="card-title"><b>>_<span class="text-yellow">CALCULUM</span></b>, DEMOCRATIZE ACCESS TO PROFESSIONAL-GRADE, FULLY- AUTOMATED. QUANTITATIVE TRADING STRATEGIES</span>
       </v-row>
 
       <v-row

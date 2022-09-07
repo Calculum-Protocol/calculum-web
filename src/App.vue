@@ -47,7 +47,7 @@ a {
 }
 
 #app {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
   margin: 0 auto;
   padding: 0;
@@ -62,5 +62,9 @@ a {
 
 .white-border {
   border: 1px solid #fff !important;
+}
+
+.card-title {
+  font-size: 20px;
 }
 </style>
