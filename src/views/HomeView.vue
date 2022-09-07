@@ -25,11 +25,11 @@
 
         <v-row class="justify-space-around mt-7">
           <v-col>
-            <VaultCard />
+            <Vault1 />
           </v-col>
 
           <v-col>
-            <VaultCard />
+            <Vault2 />
           </v-col>
         </v-row>
       </v-col>
@@ -39,14 +39,16 @@
 
 <script>
 import TopCard from "@/components/TopCard.vue";
-import VaultCard from "@/components/VaultCard.vue";
+import Vault1 from "@/components/Vault1.vue";
+import Vault2 from "@/components/Vault2.vue";
 
 export default {
   name: "HomeView",
 
   components: {
     TopCard,
-    VaultCard,
+    Vault1,
+    Vault2,
   },
 };
 </script>
