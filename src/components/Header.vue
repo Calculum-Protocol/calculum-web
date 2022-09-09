@@ -12,8 +12,29 @@
 
     <v-spacer></v-spacer>
 
-    <img src="@/assets/icons/twitter.png" />
-    <img src="@/assets/icons/discord.png" />
-    <img src="@/assets/icons/github.png" />
+    <img class="ml-3" src="@/assets/icons/twitter.png" />
+    <img class="ml-3" src="@/assets/icons/discord.png" />
+    <img class="ml-3" src="@/assets/icons/github.png" />
+
+    <ClearButton
+      text="Connect Wallet"
+      class="ml-3"
+    />
   </v-app-bar>
 </template>
+
+<script>
+import ClearButton from "@/components/ClearButton.vue";
+
+export default {
+  name: "Header",
+
+  components: {
+    ClearButton,
+  },
+};
+</script>
+
+
+<style>
+</style>

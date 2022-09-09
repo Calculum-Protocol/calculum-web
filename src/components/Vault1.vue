@@ -71,18 +71,15 @@
             class="align-content-space-between"
             style="height: 100%;"
           >
-            <v-col class="white-border pa-0 rounded-lg">
+            <v-col>
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <v-btn
-                    depressed
-                    color="transparent"
-                    style="width: inherit; color: #fff;"
+                  <div
                     v-bind="attrs"
                     v-on="on"
                   >
-                    Vault Details
-                  </v-btn>
+                    <ClearButton text="Vault Details" />
+                  </div>
                 </template>
 
                 <span class="text-uppercase">Coming soon</span>
@@ -135,12 +132,14 @@
 </template>
 
 <script>
+import ClearButton from "@/components/ClearButton.vue";
 import VaultCard from "@/components/VaultCard.vue";
 
 export default {
   name: "Vault1",
 
   components: {
+    ClearButton,
     VaultCard,
   },
 };
