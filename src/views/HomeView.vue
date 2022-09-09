@@ -8,9 +8,14 @@
         <v-sheet
           color="#191919"
           rounded="lg"
+          class="d-flex flex-column justify-center"
+          style="height: 100%;"
         >
           <v-container>
-            <div>
+            <div
+              class="font-weight-bold"
+              style="font-size: 22px;"
+            >
               <a href="/"><p><span class="text-yellow font-weight-bold">>_</span>Home</p></a>
               <a href="/" target="_blank"><p><span class="text-yellow font-weight-bold">>_</span>Vaults</p></a>
               <a href="https://app.gitbook.com/o/sGAuGR9Uq2pGzhN0Y2im/home" target="_blank"><p><span class="text-yellow font-weight-bold">>_</span>Docs</p></a>
