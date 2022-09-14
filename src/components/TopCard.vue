@@ -26,7 +26,7 @@
           class="text-center"
         >
           <span style="font-size: 28px;">Net APY: 20.0%</span>
-          <span class="ml-2">Average since inception</span>
+          <span style="font-size: 20px;" class="ml-2">Average since inception</span>
         </v-col>
       </v-row>
     </v-container>

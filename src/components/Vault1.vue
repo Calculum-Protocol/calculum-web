@@ -18,8 +18,15 @@
             </v-col>
 
             <v-col class="pb-0">
-              <span>USDC</span>
-              <img src="@/assets/coins/usdc.svg" width="24" class="ml-2" />
+              <v-row no-gutters>
+                <v-col style="flex-grow: initial;">
+                  <span>USDC</span>
+                </v-col>
+
+                <v-col>
+                  <img src="@/assets/coins/usdc.svg" width="24" class="ml-2" />
+                </v-col>
+              </v-row>
             </v-col>
           </v-row>
 
@@ -122,6 +129,7 @@
                 dark
                 color="#958a81"
                 class="white-border rounded-lg"
+                style="font-size: 20px;"
                 v-bind="attrs"
                 v-on="on"
               >
@@ -208,6 +216,7 @@
             dark
             color="#b86840"
             class="white-border rounded-lg"
+            style="font-size: 20px;"
           >
             Initiate Withdrawal
           </v-btn>
