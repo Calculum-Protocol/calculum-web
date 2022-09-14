@@ -2,7 +2,7 @@
   <VaultCard>
     <template v-slot:title>
       <v-row class="justify-center pb-1">
-        <span class="card-title"><b><span class="text-yellow">VAULT #1:</span> LONG-ONLY MOMENTUM STRATERY</b></span>
+        <span class="card-title"><b><span class="text-yellow">VAULT #1:</span> LONG-ONLY MOMENTUM STRATEGY</b></span>
       </v-row>
     </template>
 
@@ -49,7 +49,7 @@
             </v-col>
 
             <v-col class="pb-0">
-              <span>1.75 since incention</span>
+              <span>1.75 since inception</span>
             </v-col>
           </v-row>
 
@@ -78,7 +78,11 @@
                     v-bind="attrs"
                     v-on="on"
                   >
-                    <ClearButton text="Vault Details" />
+                    <ClearButton>
+                      <template v-slot:text>
+                        Vault Details
+                      </template>
+                    </ClearButton>
                   </div>
                 </template>
 

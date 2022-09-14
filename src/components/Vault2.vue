@@ -2,7 +2,7 @@
   <VaultCard>
     <template v-slot:title>
       <v-row class="justify-center pb-1">
-        <span class="card-title"><b><span class="text-yellow">VAULT #2:</span> LONG-SHORT MOMENTUM STRATERY</b></span>
+        <span class="card-title"><b><span class="text-yellow">VAULT #2:</span> LONG-SHORT MOMENTUM STRATEGY</b></span>
       </v-row>
     </template>
 
