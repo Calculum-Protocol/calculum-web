@@ -95,7 +95,8 @@
             >
               <span>Your Holdings</span>
               <br />
-              <span>--</span>
+              <span v-if="metaMaskStore.account">$1.500.0</span>
+              <span v-else>--</span>
             </v-col>
           </v-row>
         </v-col>
@@ -138,6 +139,7 @@
 <script>
 import ClearButton from "@/components/ClearButton.vue";
 import VaultCard from "@/components/VaultCard.vue";
+import { useMetaMaskStore } from "@/stores/metamask";
 
 export default {
   name: "Vault1",
@@ -146,5 +148,9 @@ export default {
     ClearButton,
     VaultCard,
   },
+
+  data: () => ({
+    metaMaskStore: useMetaMaskStore(),
+  }),
 };
 </script>
