@@ -1,10 +1,23 @@
 <template>
   <ClearButton
-    :text="isConnected ? 'CONNECTED' : 'CONNECT WALLET'"
     class="ml-3 pa-3"
     style="font-size: 20px;"
     v-on:handleClickClearButton="handleClickMetaMask"
-  />
+  >
+    <template v-slot:text>
+      <v-row
+        no-gutters
+        v-if="isConnected"
+      >
+        <v-col><img class="mr-1" src="@/assets/icons/metamask.png" /></v-col>
+        <v-col><span>{{metaMaskStore.account.slice(0, 5)}}</span></v-col>
+        <v-col><span>...</span></v-col>
+        <v-col><span>{{metaMaskStore.account.substring(metaMaskStore.account.length - 4)}}</span></v-col>
+      </v-row>
+
+      <span v-else>CONNECT WALLET</span>
+    </template>
+  </ClearButton>
 </template>
 
 <script setup>

@@ -6,7 +6,7 @@
     style="width: inherit; color: #fff;"
     @click="$emit('handleClickClearButton')"
   >
-    {{text}}
+    <slot name="text" />
   </v-btn>
 </template>
 
