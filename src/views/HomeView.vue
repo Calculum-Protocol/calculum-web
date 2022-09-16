@@ -4,14 +4,15 @@
       <v-col
         cols="10"
         sm="2"
+        class="pl-0"
       >
         <v-sheet
           color="#191919"
           rounded="lg"
-          class="d-flex flex-column justify-center"
+          class="d-flex flex-column"
           style="height: 100%;"
         >
-          <v-container>
+          <v-container class="pl-0">
             <div
               class="font-weight-bold"
               style="font-size: 22px;"

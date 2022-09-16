@@ -1,8 +1,9 @@
 <template>
   <v-app-bar
     app
-    color="#191919"
     flat
+    class="page-header"
+    style="width: 1024px; background-color: #191919; left: initial; right: initial; padding-left: 0;"
   >
     <img
       src="@/assets/logo.svg"
@@ -31,3 +32,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.page-header .v-toolbar__content {
+  padding-left: 0;
+}
+</style>

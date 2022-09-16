@@ -3,7 +3,7 @@
     <v-main>
       <Header />
 
-      <router-view/>
+      <router-view class="mt-7" />
     </v-main>
   </v-app>
 </template>
@@ -46,7 +46,12 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #191919;
+}
+
 #app {
+  width: 1024px;
   font-size: 18px;
   font-weight: normal;
   margin: 0 auto;

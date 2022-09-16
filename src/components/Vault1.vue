@@ -129,7 +129,7 @@
                 dark
                 color="#958a81"
                 class="white-border rounded-lg"
-                style="font-size: 20px;"
+                style="font-size: 16px;"
                 v-bind="attrs"
                 v-on="on"
               >
@@ -216,7 +216,7 @@
             dark
             color="#b86840"
             class="white-border rounded-lg"
-            style="font-size: 20px;"
+            style="font-size: 16px;"
           >
             Initiate Withdrawal
           </v-btn>
