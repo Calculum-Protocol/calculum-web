@@ -51,8 +51,7 @@ body {
 }
 
 #app {
-  width: 1024px;
-  font-size: 18px;
+  font-size: 1.15rem;
   font-weight: normal;
   margin: 0 auto;
   padding: 0;
@@ -70,6 +69,6 @@ body {
 }
 
 .card-title {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 </style>

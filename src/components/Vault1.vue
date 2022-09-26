@@ -11,9 +11,9 @@
         class="pt-2"
         style="border-top: 1px solid #fbc216;"
       >
-        <v-col md="8">
+        <v-col md="7">
           <v-row>
-            <v-col class="pb-0">
+            <v-col cols="7" class="pb-0">
               <span>> DEPOSIT ASSET:</span>
             </v-col>
 
@@ -31,7 +31,7 @@
           </v-row>
 
           <v-row>
-            <v-col class="pb-0">
+            <v-col cols="7" class="pb-0">
               <span>> CURRENT TVL:</span>
             </v-col>
 
@@ -41,7 +41,7 @@
           </v-row>
 
           <v-row>
-            <v-col class="pb-0">
+            <v-col cols="7" class="pb-0">
               <span>> TVL CAP:</span>
             </v-col>
 
@@ -51,22 +51,60 @@
           </v-row>
 
           <v-row>
-            <v-col class="pb-0">
+            <v-col cols="7" class="pb-0">
               <span>> SHARPE RATIO:</span>
             </v-col>
 
             <v-col class="pb-0">
-              <span>1.75 since inception</span>
+              <span>1.75</span>
+
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <img
+                    v-bind="attrs"
+                    v-on="on"
+                    src="@/assets/icons/info.svg"
+                    width="24"
+                    class="ml-2"
+                  />
+                </template>
+
+                <span
+                  class="text-uppercase"
+                  style="font-size: 1rem;"
+                >
+                  Based on live trading during test period between [date] and [date]
+                </span>
+              </v-tooltip>
             </v-col>
           </v-row>
 
           <v-row>
-            <v-col class="pb-0">
+            <v-col cols="7" class="pb-0">
               <span>> MAX DRAWDOWN:</span>
             </v-col>
 
             <v-col class="pb-0">
               <span>-5.0%</span>
+
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <img
+                    v-bind="attrs"
+                    v-on="on"
+                    src="@/assets/icons/info.svg"
+                    width="24"
+                    class="ml-2"
+                  />
+                </template>
+
+                <span
+                  class="text-uppercase"
+                  style="font-size: 1rem;"
+                >
+                  Based on live trading during test period between [date] and [date]
+                </span>
+              </v-tooltip>
             </v-col>
           </v-row>
         </v-col>
@@ -85,20 +123,24 @@
                     v-bind="attrs"
                     v-on="on"
                   >
-                    <ClearButton>
-                      <template v-slot:text>
-                        Vault Details
-                      </template>
+                    <ClearButton style="font-size: 1rem;">
+                      <template v-slot:text>Vault Details</template>
                     </ClearButton>
                   </div>
                 </template>
 
-                <span class="text-uppercase">Coming soon</span>
+                <span
+                  class="text-uppercase"
+                  style="font-size: 1rem;"
+                >
+                  Coming soon
+                </span>
               </v-tooltip>
             </v-col>
 
             <v-col
               class="white-border pa-1 text-uppercase rounded-lg"
+              style="font-size: 1rem; letter-spacing: 0.0892857143em;"
             >
               <span>Your Holdings</span>
               <br />
@@ -110,10 +152,29 @@
       </v-row>
 
       <div
-        class="text-center card-title mt-6"
-        style="border: 1px solid #fbc216; width: 60%; margin: 0 auto;"
+        class="text-center card-title pa-2 mt-6"
+        style="border: 1px solid #fbc216; width: fit-content; margin: 0 auto;"
       >
         Net APY: <span class="text-yellow">20.0%</span> since inception
+
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <img
+              v-bind="attrs"
+              v-on="on"
+              src="@/assets/icons/info.svg"
+              width="24"
+              class="ml-2"
+            />
+          </template>
+
+          <span
+            class="text-uppercase"
+            style="font-size: 1rem;"
+          >
+            Based on live trading during test period between [date] and [date]
+          </span>
+        </v-tooltip>
       </div>
 
       <v-row class="text-center mt-2">
@@ -121,7 +182,7 @@
           <v-dialog
             v-model="showDepositDialog"
             max-width="600"
-            style="font-size: 24px;"
+            style="font-size: 1.5rem;"
           >
             <template v-slot:activator="{ on, attrs }">
               <v-btn
@@ -129,7 +190,7 @@
                 dark
                 color="#958a81"
                 class="white-border rounded-lg"
-                style="font-size: 16px;"
+                style="font-size: 1rem;"
                 v-bind="attrs"
                 v-on="on"
               >
@@ -216,7 +277,7 @@
             dark
             color="#b86840"
             class="white-border rounded-lg"
-            style="font-size: 16px;"
+            style="font-size: 1rem;"
           >
             Initiate Withdrawal
           </v-btn>

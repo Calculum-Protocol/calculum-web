@@ -1,9 +1,9 @@
 <template>
-  <v-container>
+  <v-container style="width: 100%; max-width: 100%; padding: 20px;">
     <v-row>
       <v-col
         cols="10"
-        sm="2"
+        sm="1"
         class="pl-0"
       >
         <v-sheet
@@ -15,7 +15,7 @@
           <v-container class="pl-0">
             <div
               class="font-weight-bold"
-              style="font-size: 22px;"
+              style="font-size: 1.35rem"
             >
               <a href="/"><p><span class="text-yellow font-weight-bold">>_</span>Home</p></a>
               <a href="/" target="_blank"><p><span class="text-yellow font-weight-bold">>_</span>Vaults</p></a>
@@ -37,6 +37,10 @@
           <v-col>
             <Vault2 />
           </v-col>
+
+          <v-col>
+            <Vault3 />
+          </v-col>
         </v-row>
       </v-col>
     </v-row>
@@ -47,6 +51,7 @@
 import TopCard from "@/components/TopCard.vue";
 import Vault1 from "@/components/Vault1.vue";
 import Vault2 from "@/components/Vault2.vue";
+import Vault3 from "@/components/Vault3.vue";
 
 export default {
   name: "HomeView",
@@ -55,6 +60,7 @@ export default {
     TopCard,
     Vault1,
     Vault2,
+    Vault3,
   },
 };
 </script>

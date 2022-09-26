@@ -3,7 +3,7 @@
     app
     flat
     class="page-header"
-    style="width: 1024px; background-color: #191919; left: initial; right: initial; padding-left: 0;"
+    style="width: 100%; background-color: #191919; left: initial; right: initial; padding-left: 0;"
   >
     <img
       src="@/assets/logo.svg"

@@ -1,7 +1,7 @@
 <template>
   <ClearButton
     class="ml-3 pa-3"
-    style="font-size: 20px;"
+    style="font-size: 1.25rem;"
     v-on:handleClickClearButton="handleClickMetaMask"
   >
     <template v-slot:text>
