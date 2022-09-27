@@ -1,5 +1,5 @@
 <template>
-  <v-container style="width: 100%; max-width: 100%; padding: 20px;">
+  <v-container style="width: 100%; max-width: 100%; padding: 1.25rem;">
     <v-row>
       <v-col
         cols="10"
