@@ -17,16 +17,16 @@
               <span>> DEPOSIT ASSET:</span>
             </v-col>
 
-            <v-col class="pb-0">
-              <v-row no-gutters>
-                <v-col style="flex-grow: initial;">
-                  <span>USDC</span>
-                </v-col>
+            <v-col class="d-flex align-center pb-0">
+              <span>USDC</span>
 
-                <v-col>
-                  <img src="@/assets/coins/usdc.svg" width="24" class="ml-2" />
-                </v-col>
-              </v-row>
+              <img
+                v-bind="attrs"
+                v-on="on"
+                src="@/assets/coins/usdc.svg"
+                width="24"
+                class="ml-2"
+              />
             </v-col>
           </v-row>
 
@@ -55,7 +55,7 @@
               <span>> SHARPE RATIO:</span>
             </v-col>
 
-            <v-col class="pb-0">
+            <v-col class="d-flex align-center pb-0">
               <span>1.75</span>
 
               <v-tooltip bottom>
@@ -84,7 +84,7 @@
               <span>> MAX DRAWDOWN:</span>
             </v-col>
 
-            <v-col class="pb-0">
+            <v-col class="d-flex align-center pb-0">
               <span>-5.0%</span>
 
               <v-tooltip bottom>
@@ -152,10 +152,10 @@
       </v-row>
 
       <div
-        class="text-center card-title pa-2 mt-6"
+        class="d-flex align-center text-center card-title pa-2 mt-6"
         style="border: 1px solid #fbc216; width: fit-content; margin: 0 auto;"
       >
-        Net APY: <span class="text-yellow">20.0%</span> since inception
+        <span>Net APY: <span class="text-yellow">20.0%</span> since inception</span>
 
         <v-tooltip bottom>
           <template v-slot:activator="{ on, attrs }">
