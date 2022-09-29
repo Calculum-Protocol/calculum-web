@@ -180,6 +180,7 @@
       <v-row class="text-center mt-2">
         <v-col>
           <v-dialog
+            persistent
             v-model="showDepositDialog"
             max-width="600"
             style="font-size: 1.5rem;"
@@ -345,6 +346,7 @@ export default {
 
       setTimeout(() => {
         this.showLoader = false;
+        this.closeDepositDialog();
       }, 2000)
     },
     closeDepositDialog: function() {
