@@ -21,8 +21,6 @@
               <span>USDC</span>
 
               <img
-                v-bind="attrs"
-                v-on="on"
                 src="@/assets/coins/usdc.svg"
                 width="24"
                 class="ml-2"
