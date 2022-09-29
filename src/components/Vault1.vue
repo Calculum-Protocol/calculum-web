@@ -185,6 +185,7 @@
             v-model="showDepositDialog"
             max-width="600"
             style="font-size: 1.5rem;"
+            @click:outside="closeDepositDialog"
           >
             <template v-slot:activator="{ on, attrs }">
               <v-btn
@@ -218,21 +219,34 @@
 
                 <v-card-text class="pa-12">
                   <div class="text-body-1">
-                    <v-text-field
-                      outlined
-                      dark
-                      color="#fff"
-                      label="Amount"
-                      :rules="depositInputRules"
-                      v-model="depositValue"
-                    ></v-text-field>
+                    <v-form ref="formDeposit">
+                      <v-text-field
+                        outlined
+                        dark
+                        background-color="#191919"
+                        color="#fff"
+                        label="Amount"
+                        :rules="depositInputRules"
+                        v-model="depositValue"
+                      >
+                        <template v-slot:append>
+                          <span
+                            class="pa-2"
+                            style="color: #fff; background-color: #3c3c3c;"
+                            @click="depositValue = 1000"
+                          >
+                            MAX
+                          </span>
+                        </template>
+                      </v-text-field>
+                    </v-form>
                   </div>
                 </v-card-text>
 
                 <v-card-actions class="justify-end">
                   <v-btn
                     class="white-border rounded-lg"
-                    @click="showDepositDialog.value = false"
+                    @click="closeDepositDialog"
                   >
                     Cancel
                   </v-btn>
@@ -324,6 +338,7 @@ export default {
 
       const res1 = await contractWithSigner.deposit(this.depositValue, signerAddress);
       const res2 = await contractWithSigner.balanceOf(signerAddress);
+
       console.log(res1);
       console.log(res2);
     },
@@ -332,9 +347,20 @@ export default {
 
       setTimeout(() => {
         this.showLoader = false;
-        this.showDepositDialog = false;
       }, 2000)
+    },
+    closeDepositDialog: function() {
+      this.showDepositDialog = false;
+      this.$refs.formDeposit.reset();
     },
   }
 };
 </script>
+
+<style>
+.v-input__append-inner {
+  margin: 0 !important;
+  align-self: center !important;
+  cursor: pointer;
+}
+</style>
