@@ -14,7 +14,7 @@
         <v-col md="8">
           <v-row>
             <v-col class="pb-0">
-              <span>> COMING LATER...</span>
+              <span>> Coming later...</span>
             </v-col>
           </v-row>
         </v-col>

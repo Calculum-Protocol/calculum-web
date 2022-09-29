@@ -14,7 +14,7 @@
         <v-col md="7">
           <v-row>
             <v-col cols="7" class="pb-0">
-              <span>> DEPOSIT ASSET:</span>
+              <span>> Deposit asset:</span>
             </v-col>
 
             <v-col class="d-flex align-center pb-0">
@@ -32,7 +32,7 @@
 
           <v-row>
             <v-col cols="7" class="pb-0">
-              <span>> CURRENT TVL:</span>
+              <span>> Current TVL:</span>
             </v-col>
 
             <v-col class="pb-0">
@@ -42,7 +42,7 @@
 
           <v-row>
             <v-col cols="7" class="pb-0">
-              <span>> TVL CAP:</span>
+              <span>> TVL cap:</span>
             </v-col>
 
             <v-col class="pb-0">
@@ -52,7 +52,7 @@
 
           <v-row>
             <v-col cols="7" class="pb-0">
-              <span>> SHARPE RATIO:</span>
+              <span>> Sharpe ratio:</span>
             </v-col>
 
             <v-col class="d-flex align-center pb-0">
@@ -81,7 +81,7 @@
 
           <v-row>
             <v-col cols="7" class="pb-0">
-              <span>> MAX DRAWDOWN:</span>
+              <span>> Max drawdown:</span>
             </v-col>
 
             <v-col class="d-flex align-center pb-0">
