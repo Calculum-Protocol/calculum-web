@@ -113,7 +113,7 @@
           <v-row
             dense
             no-gutters
-            class="align-content-space-between"
+            class="flex-column"
             style="height: 100%;"
           >
             <v-col>
@@ -139,13 +139,15 @@
             </v-col>
 
             <v-col
-              class="white-border pa-1 text-uppercase rounded-lg"
+              class="d-flex justify-center align-center"
               style="font-size: 1rem; letter-spacing: 0.0892857143em;"
             >
-              <span>Your Holdings</span>
-              <br />
-              <span v-if="metaMaskStore.account">$1.500.0</span>
-              <span v-else>--</span>
+              <div class="white-border pa-2 pl-4 pr-4 text-uppercase rounded-lg">
+                <span>Your Holdings</span>
+                <br />
+                <span v-if="metaMaskStore.account">$1.500.0</span>
+                <span v-else>--</span>
+              </div>
             </v-col>
           </v-row>
         </v-col>
