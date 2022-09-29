@@ -231,7 +231,7 @@
                         <template v-slot:append>
                           <span
                             class="pa-2"
-                            style="color: #fff; background-color: #3c3c3c;"
+                            style="color: rgba(0, 0, 0, 0.87); background-color: #f5f5f5; font-family: 'Agency FB'"
                             @click="depositValue = 1000"
                           >
                             MAX
