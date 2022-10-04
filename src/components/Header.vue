@@ -3,7 +3,7 @@
     app
     flat
     class="page-header"
-    style="width: 100%; background-color: #191919; left: initial; right: initial; padding-left: 0;"
+    style="width: 100%; background-color: #191919;"
   >
     <img
       src="@/assets/logo.svg"
@@ -35,6 +35,6 @@ export default {
 
 <style>
 .page-header .v-toolbar__content {
-  padding-left: 0;
+  padding: 0px 40px 0px;
 }
 </style>

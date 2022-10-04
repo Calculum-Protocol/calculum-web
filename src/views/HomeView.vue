@@ -1,5 +1,5 @@
 <template>
-  <v-container style="width: 100%; max-width: 100%; padding: 1.25rem;">
+  <v-container style="width: 100%; max-width: 100%;">
     <v-row>
       <v-col
         cols="10"
@@ -26,7 +26,7 @@
         </v-sheet>
       </v-col>
 
-      <v-col>
+      <v-col style="padding: 0;">
         <TopCard />
 
         <v-row class="justify-space-around mt-7">

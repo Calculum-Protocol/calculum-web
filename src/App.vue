@@ -54,7 +54,7 @@ body {
   font-size: 1.15rem;
   font-weight: normal;
   margin: 0 auto;
-  padding: 0;
+  padding: 0px 40px 0px;
   background-color: #191919;
   color: #fff;
   font-family: "Agency FB";
