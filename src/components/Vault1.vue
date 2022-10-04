@@ -67,12 +67,7 @@
                   />
                 </template>
 
-                <span
-                  class="text-uppercase"
-                  style="font-size: 1rem;"
-                >
-                  Based on live trading during test period between [date] and [date]
-                </span>
+                <span style="font-size: 1.2rem;">Based on live trading during test period between [date] and [date]</span>
               </v-tooltip>
             </v-col>
           </v-row>
@@ -96,12 +91,7 @@
                   />
                 </template>
 
-                <span
-                  class="text-uppercase"
-                  style="font-size: 1rem;"
-                >
-                  Based on live trading during test period between [date] and [date]
-                </span>
+                <span style="font-size: 1.2rem;">Based on live trading during test period between [date] and [date]</span>
               </v-tooltip>
             </v-col>
           </v-row>
@@ -127,12 +117,7 @@
                   </div>
                 </template>
 
-                <span
-                  class="text-uppercase"
-                  style="font-size: 1rem;"
-                >
-                  Coming soon
-                </span>
+                <span style="font-size: 1.2rem;">Coming soon</span>
               </v-tooltip>
             </v-col>
 
@@ -168,12 +153,7 @@
             />
           </template>
 
-          <span
-            class="text-uppercase"
-            style="font-size: 1rem;"
-          >
-            Based on live trading during test period between [date] and [date]
-          </span>
+          <span style="font-size: 1.2rem;">Based on live trading during test period between [date] and [date]</span>
         </v-tooltip>
       </div>
 
