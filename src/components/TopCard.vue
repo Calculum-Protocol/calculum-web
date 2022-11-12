@@ -23,14 +23,14 @@
           sm="6"
           class="text-center right-border-yellow"
         >
-          <span style="font-size: 1.75rem;">Total Value Locked: $50k</span>
+          <span style="font-size: 1.75rem;">Total Value Locked: $[ ]k</span>
         </v-col>
 
         <v-col
           sm="6"
           class="text-center"
         >
-          <span style="font-size: 1.75rem;">Net APY: 20.0%</span>
+          <span style="font-size: 1.75rem;">Net APY: [ ]%</span>
           <span style="font-size: 1.5rem;" class="ml-2">Average since inception</span>
         </v-col>
       </v-row>

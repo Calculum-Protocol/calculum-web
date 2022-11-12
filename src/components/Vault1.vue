@@ -2,7 +2,7 @@
   <VaultCard>
     <template v-slot:title>
       <v-row class="justify-center pb-1">
-        <span class="card-title"><b><span class="text-yellow">VAULT #1:</span> LONG-ONLY MOMENTUM STRATEGY</b></span>
+        <span class="card-title"><b><span class="text-yellow">VAULT #1:</span> WORK IN PROGRESS</b></span>
       </v-row>
     </template>
 
@@ -34,7 +34,7 @@
             </v-col>
 
             <v-col class="pb-0">
-              <span>$50K</span>
+              <span>$[ ]K</span>
             </v-col>
           </v-row>
 
@@ -44,7 +44,7 @@
             </v-col>
 
             <v-col class="pb-0">
-              <span>$100K</span>
+              <span>$[ ]K</span>
             </v-col>
           </v-row>
 
@@ -78,7 +78,7 @@
             </v-col>
 
             <v-col class="d-flex align-center pb-0">
-              <span>-5.0%</span>
+              <span>[ ]%</span>
 
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
@@ -140,7 +140,7 @@
         class="d-flex align-center text-center card-title pa-2 mt-6"
         style="border: 1px solid #fbc216; width: fit-content; margin: 0 auto;"
       >
-        <span>Net APY: <span class="text-yellow">20.0%</span> since inception</span>
+        <span>Net APY: <span class="text-yellow">[ ]%</span> since inception</span>
 
         <v-tooltip bottom>
           <template v-slot:activator="{ on, attrs }">
