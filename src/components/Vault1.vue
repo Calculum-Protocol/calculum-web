@@ -54,7 +54,7 @@
             </v-col>
 
             <v-col class="d-flex align-center pb-0">
-              <span>1.75</span>
+              <span>[ ]</span>
 
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">

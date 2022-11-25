@@ -17,10 +17,10 @@
               class="font-weight-bold"
               style="font-size: 1.35rem"
             >
-              <a href="/"><p><span class="text-yellow font-weight-bold">>_</span>Home</p></a>
-              <a href="/" target="_blank"><p><span class="text-yellow font-weight-bold">>_</span>Vaults</p></a>
-              <a href="https://calculum.gitbook.io/calculum" target="_blank"><p><span class="text-yellow font-weight-bold">>_</span>Docs</p></a>
-              <a href="https://medium.com" target="_blank"><p><span class="text-yellow font-weight-bold">>_</span>Blog</p></a>
+              <a href="#"><p><span class="text-yellow font-weight-bold">>_</span>Home</p></a>
+              <a href="#"><p><span class="text-yellow font-weight-bold">>_</span>Vaults</p></a>
+              <a href="https://calculum.gitbook.io/calculum-docs" target="_blank"><p><span class="text-yellow font-weight-bold">>_</span>Docs</p></a>
+              <a href="https://medium.com/@CalculumFi" target="_blank"><p><span class="text-yellow font-weight-bold">>_</span>Blog</p></a>
             </div>
           </v-container>
         </v-sheet>

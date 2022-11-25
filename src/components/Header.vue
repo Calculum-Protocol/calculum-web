@@ -13,9 +13,9 @@
 
     <v-spacer></v-spacer>
 
-    <img class="ml-3" src="@/assets/icons/twitter.png" />
-    <img class="ml-3" src="@/assets/icons/discord.png" />
-    <img class="ml-3" src="@/assets/icons/github.png" />
+    <a href="https://twitter.com/CalculumFi" target="_blank"><img class="ml-3" src="@/assets/icons/twitter.png" /></a>
+    <a href="https://discord.gg/AWV4KEsjXk" target="_blank"><img class="ml-3" src="@/assets/icons/discord.png" /></a>
+    <a href="https://github.com/Calculum-Protocol" target="_blank"><img class="ml-3" src="@/assets/icons/github.png" /></a>
 
     <MetaMask />
   </v-app-bar>
