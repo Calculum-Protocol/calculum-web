@@ -10,7 +10,7 @@
           class="card-title"
           style="font-size: 1.5rem;"
         >
-          <b>>_<span class="text-yellow">CALCULUM</span></b>, Democratize access to professional-grade, fully-automated, quantitative trading strategies
+          <b>>_<span class="text-yellow">CALCULUM</span></b>, Democratize access to professional-grade, fully-automated, quantitative trading strategies accessible via permissionless, non-custodial vaults
         </span>
       </v-row>
 
