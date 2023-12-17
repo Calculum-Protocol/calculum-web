@@ -3,13 +3,9 @@
     app
     flat
     class="page-header"
-    style="width: 100%; background-color: #191919;"
+    style="width: 100%; background-color: #191919"
   >
-    <img
-      src="@/assets/logo.svg"
-      :preview=false
-      width="200"
-    />
+    <img src="@/assets/logo.svg" :preview="false" width="200" />
 
     <v-spacer></v-spacer>
 

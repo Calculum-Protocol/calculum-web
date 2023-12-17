@@ -1,18 +1,21 @@
 <template>
   <ClearButton
     class="ml-3 pa-3"
-    style="font-size: 1.25rem;"
+    style="font-size: 1.25rem"
     v-on:handleClickClearButton="handleClickMetaMask"
   >
     <template v-slot:text>
-      <v-row
-        no-gutters
-        v-if="isConnected"
-      >
+      <v-row no-gutters v-if="isConnected">
         <v-col><img class="mr-1" src="@/assets/icons/metamask.png" /></v-col>
-        <v-col><span>{{metaMaskStore.account.slice(0, 5)}}</span></v-col>
+        <v-col
+          ><span>{{ metaMaskStore.account.slice(0, 5) }}</span></v-col
+        >
         <v-col><span>...</span></v-col>
-        <v-col><span>{{metaMaskStore.account.substring(metaMaskStore.account.length - 4)}}</span></v-col>
+        <v-col
+          ><span>{{
+            metaMaskStore.account.substring(metaMaskStore.account.length - 4)
+          }}</span></v-col
+        >
       </v-row>
 
       <span v-else>CONNECT WALLET</span>
@@ -69,10 +72,8 @@ function requestAccounts() {
 }
 
 function handleClickMetaMask() {
-  if (isConnected.value)
-    disconnectWallet()
-  else
-    connectWallet()
+  if (isConnected.value) disconnectWallet();
+  else connectWallet();
 }
 
 function connectWallet() {
@@ -89,7 +90,7 @@ function disconnectWallet() {
 
 async function depositAsset() {
   const contractAbi = [
-    "function deposit(uint256 assets, address receiver) public returns (uint256)"
+    "function deposit(uint256 assets, address receiver) public returns (uint256)",
   ];
 
   const provider = new ethers.providers.Web3Provider(window.ethereum);

@@ -2,15 +2,21 @@
   <VaultCard>
     <template v-slot:title>
       <v-row class="justify-center pb-1">
+<<<<<<< Updated upstream
         <span class="card-title"><b><span class="text-yellow">VAULT #1:</span> WORK IN PROGRESS</b></span>
+=======
+        <span class="card-title"
+          ><b
+            ><span class="text-yellow">VAULT #1:</span> LONG-ONLY MOMENTUM
+            STRATEGY</b
+          ></span
+        >
+>>>>>>> Stashed changes
       </v-row>
     </template>
 
     <template v-slot:body>
-      <v-row
-        class="pt-2"
-        style="border-top: 1px solid #fbc216;"
-      >
+      <v-row class="pt-2" style="border-top: 1px solid #fbc216">
         <v-col md="7">
           <v-row>
             <v-col cols="7" class="pb-0">
@@ -20,11 +26,7 @@
             <v-col class="d-flex align-center pb-0">
               <span>USDC</span>
 
-              <img
-                src="@/assets/coins/usdc.svg"
-                width="24"
-                class="ml-2"
-              />
+              <img src="@/assets/coins/usdc.svg" width="24" class="ml-2" />
             </v-col>
           </v-row>
 
@@ -67,7 +69,10 @@
                   />
                 </template>
 
-                <span style="font-size: 1.2rem;">Based on live trading during test period between [date] and [date]</span>
+                <span style="font-size: 1.2rem"
+                  >Based on live trading during test period between [date] and
+                  [date]</span
+                >
               </v-tooltip>
             </v-col>
           </v-row>
@@ -91,41 +96,38 @@
                   />
                 </template>
 
-                <span style="font-size: 1.2rem;">Based on live trading during test period between [date] and [date]</span>
+                <span style="font-size: 1.2rem"
+                  >Based on live trading during test period between [date] and
+                  [date]</span
+                >
               </v-tooltip>
             </v-col>
           </v-row>
         </v-col>
 
         <v-col class="text-center">
-          <v-row
-            dense
-            no-gutters
-            class="flex-column"
-            style="height: 100%;"
-          >
+          <v-row dense no-gutters class="flex-column" style="height: 100%">
             <v-col>
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
-                  <div
-                    v-bind="attrs"
-                    v-on="on"
-                  >
-                    <ClearButton style="font-size: 1rem;">
+                  <div v-bind="attrs" v-on="on">
+                    <ClearButton style="font-size: 1rem">
                       <template v-slot:text>Vault Details</template>
                     </ClearButton>
                   </div>
                 </template>
 
-                <span style="font-size: 1.2rem;">Coming soon</span>
+                <span style="font-size: 1.2rem">Coming soon</span>
               </v-tooltip>
             </v-col>
 
             <v-col
               class="d-flex justify-center align-center"
-              style="font-size: 1rem; letter-spacing: 0.0892857143em;"
+              style="font-size: 1rem; letter-spacing: 0.0892857143em"
             >
-              <div class="white-border pa-2 pl-4 pr-4 text-uppercase rounded-lg">
+              <div
+                class="white-border pa-2 pl-4 pr-4 text-uppercase rounded-lg"
+              >
                 <span>Your Holdings</span>
                 <br />
                 <span v-if="metaMaskStore.account">$1.500.0</span>
@@ -138,9 +140,11 @@
 
       <div
         class="d-flex align-center text-center card-title pa-2 mt-6"
-        style="border: 1px solid #fbc216; width: fit-content; margin: 0 auto;"
+        style="border: 1px solid #fbc216; width: fit-content; margin: 0 auto"
       >
-        <span>Net APY: <span class="text-yellow">[ ]%</span> since inception</span>
+        <span
+          >Net APY: <span class="text-yellow">20.0%</span> since inception</span
+        >
 
         <v-tooltip bottom>
           <template v-slot:activator="{ on, attrs }">
@@ -153,7 +157,10 @@
             />
           </template>
 
-          <span style="font-size: 1.2rem;">Based on live trading during test period between [date] and [date]</span>
+          <span style="font-size: 1.2rem"
+            >Based on live trading during test period between [date] and
+            [date]</span
+          >
         </v-tooltip>
       </div>
 
@@ -163,7 +170,7 @@
             persistent
             v-model="showDepositDialog"
             max-width="600"
-            style="font-size: 1.5rem;"
+            style="font-size: 1.5rem"
             @click:outside="closeDepositDialog"
           >
             <template v-slot:activator="{ on, attrs }">
@@ -172,7 +179,7 @@
                 dark
                 color="#958a81"
                 class="white-border rounded-lg"
-                style="font-size: 1rem;"
+                style="font-size: 1rem"
                 v-bind="attrs"
                 v-on="on"
               >
@@ -181,19 +188,16 @@
             </template>
 
             <template v-slot:default="showDepositDialog">
-              <v-card
-                color="#3c3c3c"
-                class="pa-2"
-                style="color: #fff;"
-              >
+              <v-card color="#3c3c3c" class="pa-2" style="color: #fff">
                 <v-toolbar
                   dark
                   flat
                   color="#3c3c3c"
                   class="card-title"
-                  style="border-bottom: 1px solid #fbc216;"
+                  style="border-bottom: 1px solid #fbc216"
                 >
-                  Deposit <span class="text-yellow pl-2 font-weight-bold">USDC</span>
+                  Deposit
+                  <span class="text-yellow pl-2 font-weight-bold">USDC</span>
                 </v-toolbar>
 
                 <v-card-text class="pa-12">
@@ -211,7 +215,12 @@
                         <template v-slot:append>
                           <span
                             class="pa-2"
-                            style="color: rgba(0, 0, 0, 0.87); background-color: #f5f5f5; font-family: 'Agency FB'; letter-spacing: 0.0892857143em;"
+                            style="
+                              color: rgba(0, 0, 0, 0.87);
+                              background-color: #f5f5f5;
+                              font-family: 'Agency FB';
+                              letter-spacing: 0.0892857143em;
+                            "
                             @click="depositValue = 1000"
                           >
                             MAX
@@ -235,7 +244,7 @@
                     dark
                     color="#b86840"
                     class="white-border rounded-lg"
-                    style="color: #fff;"
+                    style="color: #fff"
                     @click="animateLoader"
                   >
                     Deposit
@@ -245,17 +254,8 @@
             </template>
           </v-dialog>
 
-          <v-dialog
-            hide-overlay
-            persistent
-            v-model="showLoader"
-            width="300"
-          >
-            <v-card
-              dark
-              class="pa-10"
-              color="#3c3c3c"
-            >
+          <v-dialog hide-overlay persistent v-model="showLoader" width="300">
+            <v-card dark class="pa-10" color="#3c3c3c">
               <v-card-text class="pa-0">
                 <v-progress-linear
                   indeterminate
@@ -272,7 +272,7 @@
             dark
             color="#b86840"
             class="white-border rounded-lg"
-            style="font-size: 1rem;"
+            style="font-size: 1rem"
           >
             Initiate Withdrawal
           </v-btn>
@@ -297,7 +297,7 @@ export default {
   },
 
   data: () => ({
-    depositInputRules: [value => !!value || "Required"],
+    depositInputRules: [(value) => !!value || "Required"],
     depositValue: null,
     metaMaskStore: useMetaMaskStore(),
     showDepositDialog: false,
@@ -305,35 +305,42 @@ export default {
   }),
 
   methods: {
-    deposit: async function() {
+    deposit: async function () {
       const contractAbi = require("@/assets/abi.json").abi;
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const contractAddress = "0x9956150D4065892cC28b34C588Cb08e9eD01a2C9";
-      const contract = new ethers.Contract(contractAddress, contractAbi, provider);
+      const contract = new ethers.Contract(
+        contractAddress,
+        contractAbi,
+        provider
+      );
 
       const signer = provider.getSigner();
       const signerAddress = await signer.getAddress();
       const contractWithSigner = contract.connect(signer);
 
-      const res1 = await contractWithSigner.deposit(this.depositValue, signerAddress);
+      const res1 = await contractWithSigner.deposit(
+        this.depositValue,
+        signerAddress
+      );
       const res2 = await contractWithSigner.balanceOf(signerAddress);
 
       console.log(res1);
       console.log(res2);
     },
-    animateLoader: function(val) {
+    animateLoader: function (val) {
       this.showLoader = true;
 
       setTimeout(() => {
         this.showLoader = false;
         this.closeDepositDialog();
-      }, 2000)
+      }, 2000);
     },
-    closeDepositDialog: function() {
+    closeDepositDialog: function () {
       this.showDepositDialog = false;
       this.$refs.formDeposit.reset();
     },
-  }
+  },
 };
 </script>
 
